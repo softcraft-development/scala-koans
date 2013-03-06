@@ -7,7 +7,7 @@ class AboutRange extends KoanSuite {
   koan("Range are not inclusive at end of range") {
     val someNumbers = Range(0, 10)
 
-    someNumbers.size should be(__)
+    someNumbers.size should be(10)
   }
 
   koan("Range can specify increment") {
