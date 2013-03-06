@@ -16,7 +16,7 @@ class AboutLists extends KoanSuite {
 
   koan("Lists are easily created") {
     val a = List(1, 2, 3)
-    a should equal(List(__, __, __))
+    a should equal(List(1, 2, 3))
   }
 
   koan("Eq tests identity (same object)") {
