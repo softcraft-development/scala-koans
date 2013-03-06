@@ -37,8 +37,8 @@ class AboutLists extends KoanSuite {
 
   koan("Lists can be accessed via head and tail") {
     val a = List(1, 2, 3)
-    a.head should equal(__)
-    a.tail should equal(List(__, __))
+    a.head should equal(1)
+    a.tail should equal(List(2, 3))
   }
 
   koan("Lists can accessed at random") {
