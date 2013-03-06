@@ -17,10 +17,10 @@ class AboutClasses extends KoanSuite {
 
   koan("var parameters in class definition define getter and setter") {
     val aClass = new ClassWithVarParameter("description goes here")
-    aClass.description should be(__)
+    aClass.description should be("description goes here")
 
     aClass.description = "new description"
-    aClass.description should be(__)
+    aClass.description should be("new description")
   }
 
   // you can define class with private fields
