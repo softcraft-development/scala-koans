@@ -30,12 +30,12 @@ class AboutMaps extends KoanSuite {
 
     val mapValues = myMap.values
 
-    mapValues.size should be(__)
+    mapValues.size should be(3)
 
-    mapValues.head should be(__)
+    mapValues.head should be("Michigan")
 
     val lastElement = mapValues.last
-    lastElement should be(__)
+    lastElement should be("Wisconsin")
 
     // for (mval <- mapValues) println(mval)
 
