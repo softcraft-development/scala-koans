@@ -30,6 +30,10 @@ class AboutClasses extends KoanSuite {
     val aClass = new ClassWithPrivateFields("name")
 
     // NOTE: aClass.name is not accessible
+    
+    // aClass.name should be("name")
+    // Compile error: value name is not a member of AboutClasses.this.ClassWithPrivateFields
+    
   }
 
 }
