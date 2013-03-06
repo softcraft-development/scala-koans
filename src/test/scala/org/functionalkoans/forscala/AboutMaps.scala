@@ -21,7 +21,7 @@ class AboutMaps extends KoanSuite {
 
     val aNewMap = myMap + ("IL" -> "Illinois")
 
-    aNewMap.contains("IL") should be(__)
+    aNewMap.contains("IL") should be(true)
 
   }
 
