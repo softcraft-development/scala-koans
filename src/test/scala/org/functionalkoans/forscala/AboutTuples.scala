@@ -7,7 +7,7 @@ class AboutTuples extends KoanSuite {
 
   koan("Tuples can be created easily") {
     val tuple = ("apple", "dog")
-    tuple should be(__)
+    tuple should be("apple", "dog")
   }
 
   koan("Tuple items may be accessed individually") {
