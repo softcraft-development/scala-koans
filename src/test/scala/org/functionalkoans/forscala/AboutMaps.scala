@@ -64,11 +64,11 @@ class AboutMaps extends KoanSuite {
     myMap("Ann Arbor") = (48103, 48104, 48108)
     myMap("Houghton") = 49931
 
-    myMap("Houghton") should be(__)
-    myMap("Ann Arbor") should be((__, __, __))
+    myMap("Houghton") should be(49931)
+    myMap("Ann Arbor") should be((48103, 48104, 48108))
 
     // what happens if you change the Any to Int
-
+    // A: compile error: "type mismatch"
   }
 
 
