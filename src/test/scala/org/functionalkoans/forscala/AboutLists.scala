@@ -24,7 +24,7 @@ class AboutLists extends KoanSuite {
     val b = List(1, 2, 3)
 
 
-    (a eq b) should be(__)
+    (a eq b) should be(false)
   }
 
   koan("== tests equality (same content)") {
