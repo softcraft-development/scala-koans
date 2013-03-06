@@ -112,7 +112,7 @@ class AboutLists extends KoanSuite {
 
   koan("You can create a list from a range") {
     val a = (1 to 5).toList
-    a should be(List(__, __, __, __, __))
+    a should be(List(1, 2, 3, 4, 5))
   }
 
   koan("Lists reuse their tails") {
