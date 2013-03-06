@@ -15,8 +15,8 @@ class AboutTuples extends KoanSuite {
     val fruit = tuple._1
     val animal = tuple._2
 
-    fruit should be(__)
-    animal should be(__)
+    fruit should be("apple")
+    animal should be("dog")
   }
 
   koan("Tuples may be of mixed type") {
