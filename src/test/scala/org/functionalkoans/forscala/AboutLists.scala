@@ -64,19 +64,19 @@ class AboutLists extends KoanSuite {
     val a = List(1, 3, 5, 7, 9)
 
     // get the length of the list
-    a.length should equal(__)
+    a.length should equal(5)
 
     // reverse the list
-    a.reverse should equal(List(__, __, __, __, __))
+    a.reverse should equal(List(9, 7, 5, 3, 1))
 
     // convert the list to a string representation
-    a.toString should equal("List(__, __, __, __, __)")
+    a.toString should equal("List(1, 3, 5, 7, 9)")
 
     // map a function to double the numbers over the list
-    a.map {v => v * 2} should equal(List(__, __, __, __, __))
+    a.map {v => v * 2} should equal(List(2, 6, 10, 14, 18))
 
     // filter out any values divisible by 3 in the list
-    a.filter {v => v % 3 == 0} should equal(List(__, __))
+    a.filter {v => v % 3 == 0} should equal(List(3, 9))
   }
 
   koan("Functions over lists can use _ as shorthand") {
