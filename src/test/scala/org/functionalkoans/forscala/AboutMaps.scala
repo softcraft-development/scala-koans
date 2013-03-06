@@ -112,9 +112,9 @@ class AboutMaps extends KoanSuite {
     val myMap = Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
     val aNewMap = myMap - ("MI", "WI") // Notice: single '-' operator for tuples
 
-    aNewMap.contains("MI") should be(__)
-    aNewMap.contains("OH") should be(__)
-    aNewMap.size should be(__)
+    aNewMap.contains("MI") should be(false)
+    aNewMap.contains("OH") should be(true)
+    aNewMap.size should be(2)
   }
 
   koan("Attempted removal of nonexistent elements from a map is handled gracefully") {
