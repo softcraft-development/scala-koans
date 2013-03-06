@@ -6,7 +6,7 @@ class AboutMaps extends KoanSuite {
 
   koan("Maps can be created easily") {
     val myMap = Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
-    myMap.size should be(__)
+    myMap.size should be(4)
   }
 
   koan("Maps contain distinct pairings") {
