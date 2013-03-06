@@ -81,7 +81,7 @@ class AboutMaps extends KoanSuite {
   koan("Map elements can be removed easily") {
     val myMap = Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
     val aNewMap = myMap - "MI"
-    aNewMap.contains("MI") should be(__)
+    aNewMap.contains("MI") should be(false)
   }
 
   koan("Accessing a map by key results in an exception if key is not found") {
