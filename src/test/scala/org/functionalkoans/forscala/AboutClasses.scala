@@ -12,7 +12,7 @@ class AboutClasses extends KoanSuite {
 
   koan("val parameters in class definition define getter") {
     val aClass = new ClassWithValParameter("name goes here")
-    aClass.name should be(__)
+    aClass.name should be("name goes here")
   }
 
   koan("var parameters in class definition define getter and setter") {
