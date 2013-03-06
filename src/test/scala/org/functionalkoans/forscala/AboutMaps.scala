@@ -74,8 +74,8 @@ class AboutMaps extends KoanSuite {
 
   koan("Maps may be accessed") {
     val myMap = Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
-    myMap("MI") should be(__)
-    myMap("IA") should be(__)
+    myMap("MI") should be("Michigan")
+    myMap("IA") should be("Iowa")
   }
 
   koan("Map elements can be removed easily") {
