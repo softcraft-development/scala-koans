@@ -121,10 +121,21 @@ class AboutLists extends KoanSuite {
     val b = 2 :: c
     val a = 1 :: b
 
-    a should be(List(__, __, __))
-    a.tail should be(__)
-    b.tail should be(__)
-    c.tail should be(__)
+    a should be(List(1, 2, 3))
+    a.tail should be(b)
+    b.tail should be(c)
+    c.tail should be(d)
+
+    // Or...
+    a.tail should be(List(2,3))
+    b.tail should be(List(3))
+    c.tail should be(Nil)
+    
+    // And...
+    assert( a.tail eq b )
+    assert( b.tail eq c )
+    assert( c.tail eq d )
+
   }
 
 
