@@ -13,7 +13,7 @@ class AboutRange extends KoanSuite {
   koan("Range can specify increment") {
     val someNumbers = Range(2, 10, 3)
 
-    someNumbers.size should be(__)
+    someNumbers.size should be(3)
   }
 
   koan("Range can indicate inclusion") {
