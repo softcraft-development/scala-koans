@@ -21,7 +21,7 @@ class AboutAsserts extends KoanSuite with ShouldMatchers {
   koan("booleans in asserts can test equality") {
     val v1 = 4
     val v2 = 4
-    assert(v1 === __)
+    assert(v1 === v2)
   }
 
   koan("sometimes we expect you to fill in the values") {
