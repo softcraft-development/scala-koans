@@ -26,7 +26,7 @@ class AboutRange extends KoanSuite {
   koan("Range can specify to include value") {
     val someNumbers = Range(0, 34).inclusive
 
-    someNumbers.contains(34) should be(__)
+    someNumbers.contains(34) should be(true)
   }
 
 }
