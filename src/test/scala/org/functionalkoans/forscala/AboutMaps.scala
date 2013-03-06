@@ -56,7 +56,7 @@ class AboutMaps extends KoanSuite {
   koan("Map keys may be of mixed type") {
     val myMap = Map("Ann Arbor" -> "MI", 49931 -> "MI")
     myMap("Ann Arbor") should be("MI")
-    myMap(49931) should be(49931)
+    myMap(49931) should be("MI")
   }
 
   koan("Mixed type values can be added to a map ") {
