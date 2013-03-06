@@ -89,10 +89,11 @@ class AboutMaps extends KoanSuite {
     val myMap = Map("OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
 
     // Cheat Code (because this is hard to illustrate): uncomment the intercept code to make this pass 
-    //intercept[NoSuchElementException] {
+    intercept[NoSuchElementException] {
 
       myMap("MI") should be(__)
-    //}
+    }
+    // That's a java.util.NoSuchElementException
   }
 
   koan("Map elements can be removed in multiple") {
