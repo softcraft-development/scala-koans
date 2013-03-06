@@ -8,9 +8,9 @@ class AboutLists extends KoanSuite {
     val a: List[String] = Nil
     val b: List[Int] = Nil
 
-    (a == Nil) should be(__)
-    (b == Nil) should be(__)
-    (a == b) should be(__)
+    (a == Nil) should be(true)
+    (b == Nil) should be(true)
+    (a == b) should be(true)
     
   }
 
