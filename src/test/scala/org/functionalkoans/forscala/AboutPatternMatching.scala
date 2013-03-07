@@ -16,7 +16,7 @@ class AboutPatternMatching extends KoanSuite {
       case _ => println(stuff); 0 //case _ will trigger if all other cases fail.
     }
 
-    myStuff should be(__)
+    myStuff should be(2)
 
   }
 
