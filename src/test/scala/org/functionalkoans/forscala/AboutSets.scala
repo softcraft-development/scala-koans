@@ -17,7 +17,7 @@ class AboutSets extends KoanSuite {
     val mySet = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
     val aNewSet = mySet + "Illinois"
 
-    aNewSet.contains("Illinois") should be(__)
+    aNewSet.contains("Illinois") should be(true)
 
   }
 
