@@ -88,8 +88,8 @@ class AboutPatternMatching extends KoanSuite {
       case _ => "what?"
     }
 
-    goldilocks("Eating Alert: bear=Papa, source=porridge") should be(__)
-    goldilocks("Sitting Alert: bear=Mama, source=chair") should be(__)
+    goldilocks("Eating Alert: bear=Papa, source=porridge") should be("Papa said someone's been eating my porridge")
+    goldilocks("Sitting Alert: bear=Mama, source=chair") should be("Mama said someone's been sitting on my chair")
   }
 
   koan( """A backquote can be used to refer to a stable variable in scope to create a case statement.
