@@ -119,7 +119,7 @@ class AboutSets extends KoanSuite {
     val mySet1 = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
     val mySet2 = Set("Wisconsin", "Michigan", "Ohio", "Iowa")
 
-    mySet1.equals(mySet2) should be(__)
+    mySet1.equals(mySet2) should be(true)
   }
 
 }
