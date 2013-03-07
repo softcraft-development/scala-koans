@@ -32,8 +32,8 @@ class AboutSets extends KoanSuite {
   koan("Sets may be accessed") {
     val mySet = Set("Michigan", "Ohio", 12)
 
-    mySet(12) should be(__)
-    mySet("MI") should be(__)
+    mySet(12) should be(true)
+    mySet("MI") should be(false)
 
   }
 
