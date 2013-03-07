@@ -7,9 +7,9 @@ class AboutMutableMaps extends KoanSuite {
 
   koan("Mutable maps can be created easily") {
     val myMap = mutable.Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
-    myMap.size should be(__)
+    myMap.size should be(4)
     myMap += "OR" -> "Oregon"
-    myMap contains "OR" should be(__)
+    myMap contains "OR" should be(true)
   }
 
   koan("Mutable maps can have elements removed") {
