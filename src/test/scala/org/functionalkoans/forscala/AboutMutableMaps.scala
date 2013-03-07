@@ -42,8 +42,8 @@ class AboutMutableMaps extends KoanSuite {
   koan("Mutable maps can have Lists of elements removed") {
     val myMap = mutable.Map("MI" -> "Michigan", "OH" -> "Ohio", "WI" -> "Wisconsin", "IA" -> "Iowa")
     myMap --= List("IA", "OH")
-    myMap contains "OH" should be(__)
-    myMap.size should be(__)
+    myMap contains "OH" should be(false)
+    myMap.size should be(2)
   }
 
   koan("Mutable maps can be cleared") {
