@@ -24,9 +24,9 @@ class AboutSets extends KoanSuite {
   koan("Sets may be of mixed type") {
     val mySet = Set("Michigan", "Ohio", 12)
 
-    mySet.contains(12) should be(__)
+    mySet.contains(12) should be(true)
 
-    mySet.contains("MI") should be(__)
+    mySet.contains("MI") should be(false)
   }
 
   koan("Sets may be accessed") {
