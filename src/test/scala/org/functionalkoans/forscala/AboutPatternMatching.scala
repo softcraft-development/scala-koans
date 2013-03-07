@@ -103,10 +103,10 @@ class AboutPatternMatching extends KoanSuite {
       case _ => "what?"
     }
 
-    goldilocks(("porridge", "Papa")) should be(__)
-    goldilocks(("chair", "Mama")) should be(__)
-    goldilocks(("porridge", "Cousin")) should be(__)
-    goldilocks(("beer", "Cousin")) should be(__)
+    goldilocks(("porridge", "Papa")) should be("eating")
+    goldilocks(("chair", "Mama")) should be("sitting")
+    goldilocks(("porridge", "Cousin")) should be("eating")
+    goldilocks(("beer", "Cousin")) should be("what?")
   }
 
   koan("A backquote can be used to refer to a method parameter as a stable variable to create a case statement.") {
@@ -115,8 +115,8 @@ class AboutPatternMatching extends KoanSuite {
       case `i` => true
       case _ => false
     }
-    patternEquals(3, 3) should be(__)
-    patternEquals(7, 9) should be(__)
-    patternEquals(9, 9) should be(__)
+    patternEquals(3, 3) should be(true)
+    patternEquals(7, 9) should be(false)
+    patternEquals(9, 9) should be(true)
   }
 }
