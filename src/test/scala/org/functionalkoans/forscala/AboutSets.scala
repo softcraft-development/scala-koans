@@ -112,7 +112,7 @@ class AboutSets extends KoanSuite {
     val mySet2 = Set("Wisconsin", "Michigan")
     val aNewSet = mySet1 diff mySet2 // Note: you can use the "&~" operator if you *really* want to.
 
-    aNewSet.equals(Set("Ohio", "Iowa")) should be(__)
+    aNewSet.equals(Set("Ohio", "Iowa")) should be(true)
   } 
 
   koan("Set equivalency is independent of order") {
