@@ -66,7 +66,7 @@ class AboutSets extends KoanSuite {
     val mySet = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
     val aNewSet = mySet - "Minnesota"
 
-    aNewSet.equals(mySet) should be(__)
+    aNewSet.equals(mySet) should be(true)
   }
 
   koan("Sets can be iterated easily") {
