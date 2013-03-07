@@ -75,7 +75,7 @@ class AboutSets extends KoanSuite {
     for (i <- mySet)
       sum = sum + i
 
-    sum should be(__)
+    sum should be(17)
   }
 
   koan("Two sets can be intersected easily") {
