@@ -57,9 +57,9 @@ class AboutSets extends KoanSuite {
     val mySet = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
     val aNewSet = mySet - ("Michigan", "Ohio") // Notice: single '-' operator for tuples
 
-    aNewSet.contains("Michigan") should be(__)
-    aNewSet.contains("Wisconsin") should be(__)
-    aNewSet.size should be(__)
+    aNewSet.contains("Michigan") should be(false)
+    aNewSet.contains("Wisconsin") should be(true)
+    aNewSet.size should be(2)
   }
 
   koan("Attempted removal of nonexistent elements from a set is handled gracefully") {
