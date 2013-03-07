@@ -5,7 +5,7 @@ class AboutSets extends KoanSuite {
 
   koan("Sets can be created easily") {
     val mySet = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
-    mySet.size should be(__)
+    mySet.size should be(4)
   }
 
   koan("Sets contain distinct values") {
