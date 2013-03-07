@@ -13,8 +13,8 @@ class AboutFormatting extends KoanSuite with ShouldMatchers {
     //format(a) is a string format, meaning the "%c".format(x)
     //will return the string representation of the char.
 
-    "%c".format(a) should be(__)
-    "%c".format(b) should be(__)
+    "%c".format(a) should be("a")
+    "%c".format(b) should be("B")
     
   }
 
