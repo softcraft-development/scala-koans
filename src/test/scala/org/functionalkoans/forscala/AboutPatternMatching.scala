@@ -44,7 +44,7 @@ class AboutPatternMatching extends KoanSuite {
       case _ => "what?"
     }
 
-    goldilocks(("porridge", "Mama")) should be(__)
+    goldilocks(("porridge", "Mama")) should be("Mama eating porridge")
 
   }
 
