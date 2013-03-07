@@ -26,10 +26,10 @@ koan("Character Literals can be an escape sequence, including octal or hexidecim
     val f = '\\'
 
 
-    "%c".format(c) should be(__)
-    "%c".format(d) should be(__)
-    "%c".format(e) should be(__)
-    "%c".format(f) should be(__)
+    "%c".format(c) should be("a")
+    "%c".format(d) should be("a")
+    "%c".format(e) should be("\"")
+    "%c".format(f) should be("\\")
   }
 
 }
