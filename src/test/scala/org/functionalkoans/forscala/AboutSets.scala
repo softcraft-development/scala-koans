@@ -93,7 +93,7 @@ class AboutSets extends KoanSuite {
     val mySet2 = Set("Wisconsin", "Michigan", "Minnesota")
     val aNewSet = mySet1 union mySet2 // NOTE: You can also use the "|" operator
 
-    aNewSet.equals(Set("Michigan", "Wisconsin", "Ohio", "Iowa", "Minnesota")) should be(__)
+    aNewSet.equals(Set("Michigan", "Wisconsin", "Ohio", "Iowa", "Minnesota")) should be(true)
 
   }
 
