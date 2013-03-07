@@ -28,8 +28,8 @@ class AboutMutableMaps extends KoanSuite {
   koan("Mutable maps can have tuples of elements added") {
     val myMap = mutable.Map("MI" -> "Michigan", "WI" -> "Wisconsin")
     myMap += ("IA" -> "Iowa", "OH" -> "Ohio")
-    myMap contains "OH" should be(__)
-    myMap.size should be(__)
+    myMap contains "OH" should be(true)
+    myMap.size should be(4)
   }
 
   koan("Mutable maps can have Lists of elements added") {
