@@ -102,8 +102,8 @@ class AboutSets extends KoanSuite {
     val mySet2 = Set("Wisconsin", "Michigan", "Minnesota")
     val mySet3 = Set("Wisconsin", "Michigan")
 
-    mySet2 subsetOf mySet1 should be(__)
-    mySet3 subsetOf mySet1 should be(__)
+    mySet2 subsetOf mySet1 should be(false)
+    mySet3 subsetOf mySet1 should be(true)
 
   }
 
