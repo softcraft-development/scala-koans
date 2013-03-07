@@ -41,7 +41,7 @@ class AboutSets extends KoanSuite {
     val mySet = Set("Michigan", "Ohio", "Wisconsin", "Iowa")
     val aNewSet = mySet - "Michigan"
 
-    aNewSet.contains("Michigan") should be(__)
+    aNewSet.contains("Michigan") should be(false)
   }
 
   koan("Set elements can be removed in multiple") {
